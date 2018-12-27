@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# usage: python3 encode.py <encodeString> <text>
+# usage: python3 ./baseN.py --help
 
 import math
 import argparse
