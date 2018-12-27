@@ -12,7 +12,7 @@ def encode(text, encodeMap, encodingBit):
         binary[x:x + encodingBit] for x in range(0, len(binary), encodingBit)
     ]
     encodedString = ''.join([encodeMap[int(x, 2)] for x in splittedArray])
-    encodedString += (4 - len(encodedString) % 4) * '='
+    encodedString += (2 - len(encodedString) % 2) * '='
     return encodedString
 
 
